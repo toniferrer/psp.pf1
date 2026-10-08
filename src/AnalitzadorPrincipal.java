@@ -3,6 +3,7 @@ import java.io.*;
 public class AnalitzadorPrincipal {
     public static void main(String[] args) throws IOException, InterruptedException {
         ProcessBuilder pbFill = new ProcessBuilder("java", "-cp", System.getProperty("java.class.path"), "FiltreLog");
+        pbFill.redirectErrorStream(true);
         Process fill = pbFill.start();
 
         BufferedReader in = new BufferedReader(new InputStreamReader(fill.getInputStream()));
