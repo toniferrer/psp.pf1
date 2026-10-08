@@ -10,11 +10,10 @@ public class FiltreLog {
 
         //Detecte si la entrada es Error i els contabilitza
         while((entrada = brPare.readLine()) != null){
-            if(entrada == "ERROR"){
+            if(entrada.contains("ERROR")){
                 resultat++;
             }
         }
-
         System.out.println(resultat);
     }
 }
