@@ -10,7 +10,7 @@ public class FiltreLog {
 
         BufferedReader brPare = new BufferedReader(new InputStreamReader(System.in));
 
-        //Detecte si la entrada es Error i els contabilitza
+        //Detecta si la entrada es Error i els contabilitza
         while((entrada = brPare.readLine()) != null){
             if(entrada.contains("ERROR")){
                 resultat++;
