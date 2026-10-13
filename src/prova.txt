@@ -1,19 +1,19 @@
 La comida procesada forma parte de nuestra alimentación diaria.
 Cada vez es más habitual encontrar productos preparados en los supermercados.
-ERROR: Algunos alimentos contienen demasiada azúcar.
+ERROR Algunos alimentos contienen demasiada azúcar.
 Estos productos suelen ser fáciles de preparar y consumir.
 Muchas personas los compran porque permiten ahorrar tiempo.
-ERROR: El consumo excesivo de sal puede perjudicar nuestra salud.
+ERROR El consumo excesivo de sal puede perjudicar nuestra salud.
 No todos los alimentos procesados son necesariamente malos.
 Algunos productos congelados conservan sus propiedades nutricionales.
-ERROR: Los refrescos contienen grandes cantidades de azúcar.
+ERROR Los refrescos contienen grandes cantidades de azúcar.
 Las empresas utilizan conservantes para prolongar la duración de los alimentos.
 La publicidad influye mucho en nuestras decisiones de compra.
-WARNING: Algunos productos tienen un etiquetado poco claro.
+WARNING Algunos productos tienen un etiquetado poco claro.
 Es importante revisar los ingredientes antes de comprar.
 Cocinar en casa permite controlar mejor nuestra alimentación.
 Las frutas y verduras son fundamentales para una dieta equilibrada.
-WARNING: Consumir demasiados ultraprocesados puede aumentar el riesgo de enfermedades.
+WARNING Consumir demasiados ultraprocesados puede aumentar el riesgo de enfermedades.
 También es recomendable beber suficiente agua diariamente.
 WARNING
 Una alimentación saludable debe incluir productos variados.

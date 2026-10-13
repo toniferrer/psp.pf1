@@ -9,7 +9,7 @@ public class AnalitzadorPrincipal {
         File arxiuErrors = new File("errors_filtre.log");
         pbFill.redirectError(arxiuErrors);
 
-        //Iniciam els dos procesos fills
+        //Iniciam els dos processos fills
         Process fill = pbFill.start();
         Process fill2 = pbFill2.start();
 
@@ -20,7 +20,7 @@ public class AnalitzadorPrincipal {
         BufferedReader in2 = new BufferedReader(new InputStreamReader(fill2.getInputStream()));
         BufferedWriter out2 = new BufferedWriter(new OutputStreamWriter(fill2.getOutputStream()));
 
-        //Obrim el fitxer de prova per llegir
+        //Obrim el fitxer de prova per llegir-lo
         BufferedReader prova = new BufferedReader(new FileReader("src/prova.txt"));
 
         //Llegim el fitxer línia per línia i enviem el contingut al fill
@@ -39,6 +39,7 @@ public class AnalitzadorPrincipal {
         out.close();
         out2.close();
 
+        //Llegim resultat
         String resultat = in.readLine();
         String resultat2 = in2.readLine();
 
@@ -47,7 +48,7 @@ public class AnalitzadorPrincipal {
         fill.waitFor();
         fill2.waitFor();
 
-        //Capturem el exit value dels fills y mostrem segons el valor el resultat
+        //Capturem el exit value dels fills i mostrem segons el resultat
         int valorSortida = fill.exitValue();
         int valorSortida2 = fill2.exitValue();
 
@@ -57,6 +58,7 @@ public class AnalitzadorPrincipal {
             valorSortida = 1;
         }
 
+        //Mostram en pantalla els resultats
         System.out.println("RESULTAT: ERRORS=" + resultat + " | WARNINGS=" + resultat2 + " | EXIT_CODE=" + valorSortida);
     }
 }

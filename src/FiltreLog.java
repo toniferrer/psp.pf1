@@ -9,17 +9,19 @@ public class FiltreLog {
         boolean esBuit = true;
         String paraula = "ERROR";
 
-        //Si detecta un argument sustituim el valor
+        //Si detecta un argument, substituïm el valor
         if(args.length > 0) paraula = args[0];
 
+        //Llegir el pare
         BufferedReader brPare = new BufferedReader(new InputStreamReader(System.in));
 
-        //Detecta si la entrada es Error i els contabilitza
+        //Detecta si la entrada és error i els comptabilitza
         while((entrada = brPare.readLine()) != null){
             if(entrada.contains(paraula)) resultat++;
             if(!entrada.isBlank()) esBuit = false;
         }
 
+        //Mostrar, acabar i enviar 1 o 0 en funció de si el text està buit o no
         if(esBuit){
             System.err.println("Error: Text buit");
             System.exit(1);
