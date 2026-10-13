@@ -15,7 +15,7 @@ public class FiltreLog {
         //Llegir el pare
         BufferedReader brPare = new BufferedReader(new InputStreamReader(System.in));
 
-        //Detecta si la entrada és error i els comptabilitza
+        //Detecta si la entrada és ERROR o WARNING i els comptabilitza
         while((entrada = brPare.readLine()) != null){
             if(entrada.contains(paraula)) resultat++;
             if(!entrada.isBlank()) esBuit = false;
